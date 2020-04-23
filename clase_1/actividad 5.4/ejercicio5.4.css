@@ -1,0 +1,46 @@
+#span{
+	color:orange;
+	background-color:grey;
+	border-radius: 72px 72px 72px 72px;
+	-moz-border-radius: 72px 72px 72px 72px;
+	-webkit-border-radius: 72px 72px 72px 72px;
+	border: 0px solid #000000;
+}
+#villano{
+	font-size: 50px;
+}
+#heroe{
+	font-size: 50px;
+}
+#imperio *{
+	background-color: black;
+	color: red;
+}
+
+.imperio{
+	background-color: red;
+}
+#rebeldes *{
+	background-color: #ffa500;
+	color: rgb(255,255,255);
+}
+.rebeldes  {
+	background-color: blue;
+}
+#darth{
+	font-size: 20px;
+}
+#luke{
+	font-style: italic;
+}
+.soldados{
+	border-style: dotted;
+	background-color: blue;
+	letter-spacing: 10px;
+}
+.apoyo{
+	text-align: center;
+}
+.nave{ 
+	text-transform: uppercase;
+}

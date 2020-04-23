@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PetBook</title>
+</head>
+<body>
+	<h1>Bienvenidos a PetBook</h1>
+	<p>PetBook es una red social para mascotas</p>
+	<form action="https://formspree.io/leandroealmiron@hotmail.com" method="POST">
+
+		<label>Nombre de la Mascota: <input type="Text" name="texto" placeholder="Nombre" required></label><br>
+		<label>Años: <input type="number" name="edad" placeholder="edad" required></label><br>
+		<label>correo electronico: <input type="email" name="correo" placeholder="email" ></label><br>
+		<label>Contraseña <input type="password" name="contraseña" placeholder="Contraseña" required></label><br>
+		<label>Seleccione el color de su mascota:</label><input type="color"  name="colorPet"> <br>
+		<input type="radio" id="Macho" name="gender" value="Macho">
+		<label for="Macho">Macho</label><br>
+		<input type="radio" id="Hembra" name="gender" value="Hembra">
+		<label for="Hembra">Hembra</label><br>
+		<label>Tipo de mascota:<select name="tipo_de_mascota" >  <!--Es una red social para mascotas salvajes XD--->
+			<option value="perro"> Perro </option>
+			 <option value="gato"> Gato </option>
+			  <option value="tigre"> Tigre </option>
+			   <option value="elefante"> Elefante </option>
+		</select></label><br>
+		<label><a href="#">Bases y condiciones :</a></label><input type="checkbox" name="bases_y_condiciones" value="acepta" required><br>
+		<label>Contanos cómo es tu mascota<br><textarea rows="10" cols="10"></textarea></label><br>
+		<label>Enviar informacion <input type="submit"></label>
+	</form>
+
+</body>
+</html>

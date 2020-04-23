@@ -1,0 +1,60 @@
+
+h1{
+	text-align: right;
+	font-size: 50px;
+}
+body{
+	
+	background:url(background.webp);
+	background-repeat: no-repeat;
+	background-size: 150%;
+	
+	
+}
+
+body p,a{
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	font-size: 30px;
+	background-color: grey;
+
+
+}
+
+
+img{
+	border-style: solid ;
+	display:block;
+	margin:auto;
+	background:orange;
+}
+
+
+a{
+	opacity: 70%;
+	text-decoration: none;
+
+}
+a:hover{
+	color:red;
+	background-color:black;
+}
+
+.final{
+	background-repeat: no-repeat;
+	background:url(estrellaDestruida.jpeg);
+}
+.final1{
+	background-color: white;
+	display: inline;
+
+}
+
+#imperioCaido{
+
+}
+#boton{
+	font-family: 'Press Start 2P', cursive;
+	border:groove;
+	border-width: 8px;
+}
