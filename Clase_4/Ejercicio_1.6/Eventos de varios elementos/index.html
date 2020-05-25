@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul class="profesores">
+	    <li>Santi</li>
+	    <li>Toni</li>
+	    <li>Guille</li>
+	</ul>
+<!-- Selecciona todos los li adentro de un elemento clase profesores
+// y los guarda dentro de la variable lis-->
+<script type="text/javascript">
+var lis = document.querySelectorAll(".profesores > li")
+for(var i = 0; i < lis.length; i++){
+    lis[i].addEventListener("mouseover", function(){
+        this.style.color="red"
+        this.style.background="blue"
+    })
+}	
+</script>
+
+</body>
+</html>

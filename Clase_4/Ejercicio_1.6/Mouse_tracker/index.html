@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body
+		{
+			height: 100vh;
+			
+		}
+		.magic{
+			font-size: 60px;
+			cursor: none;
+			display: inline;
+		}
+
+		img { 
+        position: absolute; 
+        cursor:none;
+    
+    } 
+	</style>
+	<title>Mouse_tracker</title>
+</head>
+<body>
+
+<div class="magic">
+   Magic Div
+</div>
+	<img src="https://media.giphy.com/media/MtQxKzhytFsmQ/giphy.gif">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<input type="color" name="">
+
+<script>
+	var body = document.querySelector("body")
+	var img = document.querySelector("img")
+	var input = document.querySelector("input")
+	var  input_color = document.querySelector("[type='color']");
+	document.addEventListener("keydown", function(key){
+
+		if(key.keyCode==8){body.style.background="white"}
+	})
+	input_color.addEventListener("input",function()
+	{
+		body.style.background=input_color.value
+	})
+	
+	body.addEventListener("click", function(infoEvento) {
+		var x = infoEvento.clientX
+		var y = infoEvento.clientY
+		img.style.top = y-160+'px'
+		img.style.left = x-250+'px'
+		//body.style.background="red"
+
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<style>
+			.oculto{
+		display: none;
+		</style>
+<title></title>
+</head>
+<body>
+	<button>Show me the money</button>
+	<img class="oculto" src="https://specials-images.forbesimg.com/imageserve/5e8bcac2b0a4e4000746d4df/960x0.jpg?fit=scale" height="100px" width="100px">
+	<br>
+	<button>Show me Miami</button>
+	<img class="oculto" src="https://www.viajarmiami.com/img/guia-viaje-miami.jpg" height="100px" width="100px">
+	<br>
+	<button>Show me Maiameee</button>
+	<img class="oculto" src="https://www.infobae.com/new-resizer/mmm7kbC33Du653HFSFfjU9R9Qj0=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/VLMJYISJTRHNJOOAGOQAN3EDFM.jpg" height="100px" width="100px">
+<script >
+	var button = document.querySelectorAll("button")
+	var img  = document.querySelectorAll("img")
+	//Lo intente hacer con un for, y tambien con un while...no anduvo de ninguna forma.
+	/*var i = 0
+	while (i < button.length){
+		button[i].addEventListener("click", function(){
+			 img[i].classList.toggle("oculto")
+		})
+		i++
+	}*/
+	button[0].addEventListener("click", function(){
+			 img[0].classList.toggle("oculto")
+
+	})
+	button[1].addEventListener("click", function(){
+			 img[1].classList.toggle("oculto")
+
+	})
+	button[2].addEventListener("click", function(){
+			 img[2].classList.toggle("oculto")
+
+	})
+
+	var i = 0
+	while (i < img.length){
+		img[i].addEventListener("click", function(){
+			 this.classList.toggle("oculto")
+		})
+		i++
+	}
+				
+		
+</script>
+</body>
+</html>

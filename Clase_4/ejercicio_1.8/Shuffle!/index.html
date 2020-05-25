@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shuffle!</title>
+</head>
+<body>
+	<div id="source">div 1</div>
+	<div id="destination">div 2</div>
+<s id="swap_1">swap_1</s>
+</br>
+<s id="swap_2">swap_2</s>
+<script type="text/javascript">
+var div1 = document.querySelector("#source")
+var div2 = document.querySelector("#destination")
+div2.textContent = div1.textContent
+	function intercambiarS(s1, s2){
+		var aux_swap1 = s1.textContent
+		var aux_swap2 = s2.textContent
+		s1.textContent = aux_swap2
+		s2.textContent = aux_swap1}
+intercambiarS(swap_1, swap_2)
+</script>
+</body>
+</html>
